@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f9fb;
+    color: #222;
+    line-height: 1.5;
+}
+
+.container {
+    width: 90%;
+    max-width: 1150px;
+    margin: auto;
+}
+
+.navbar {
+    background: rgb(255, 255, 255);
+    border-bottom: 1px solid #e6e6e6;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 24px;
+    color: rgb(32, 32, 233);
+}
+
+.nav-links a {
+    margin: 0 12px;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    color: #0056ff;
+    text-decoration: underline;
+}
+
+.auth a {
+    color: #0056ff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.hero {
+    position: relative;
+    height: 380px;
+    overflow: hidden;
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 90%;
+}
+
+.hero-overlay h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.hero-overlay p {
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.search-box input {
+    width: 320px;
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 8px 0 0 8px;
+}
+
+.search-box button {
+    padding: 10px 20px;
+    background: #0056ff;
+    color: white;
+    border: none;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+}
+
+.categories {
+    margin: 50px auto;
+    text-align: center;
+}
+
+.categories h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.category-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.cat-card {
+    width: 180px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #e6e6e6;
+}
+
+.cat-card img {
+    width: 40px;
+    margin-bottom: 10px;
+}
+
+.featured {
+    margin: 40px auto;
+    text-align: center;
+}
+
+.featured h2 {
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.engineer-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.eng-card {
+    width: 230px;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #e6e6e6;
+}
+
+.eng-card img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.eng-card h4 {
+    margin: 10px 0 5px;
+}
+
+.eng-card .price {
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.btn-box {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.profile-btn {
+    padding: 8px;
+    border: 1px solid #0056ff;
+    background: white;
+    color: #0056ff;
+    border-radius: 6px;
+}
+
+.book-btn {
+    padding: 8px;
+    background: #0056ff;
+    color: white;
+    border-radius: 6px;
+    border: none;
+}
+
+.why {
+    margin: 60px auto;
+    text-align: center;
+}
+
+.why-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.why-card {
+    width: 230px;
+    padding: 20px;
+}
+
+.why-card img {
+    width: 40px;
+    margin-bottom: 10px;
+}
+
+.footer {
+    background: #f2f4f8;
+    padding: 40px 0;
+}
+
+.footer-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+
+.footer h3 {
+    margin-bottom: 10px;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
+    font-size: 14px;
+}
+
+
+@media (max-width: 900px) {
+    .nav-content {
+        gap: 15px;
+        text-align: center;
+    }
+
+    .hero-overlay h1 {
+        font-size: 1.8rem;
+    }
+
+    .cat-card,
+    .eng-card,
+    .why-card {
+        width: 45%;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero {
+        height: 320px;
+    }
+
+    .hero-overlay h1 {
+        font-size: 1.5rem;
+    }
+
+    .search-box input {
+        width: 180px;
+    }
+
+    .cat-card,
+    .eng-card,
+    .why-card {
+        width: 100%;
+    }
+
+    .nav-links {
+        width: 100%;
+        text-align: center;
+    }
+} 
