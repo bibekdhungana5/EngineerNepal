@@ -1,0 +1,109 @@
+/* Reset & base */
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;background:#f7f8fa;color:#0f1720;-webkit-font-smoothing:antialiased}
+.container{max-width:1180px;margin:0 auto;padding:0 22px}
+
+/* HEADER */
+.site-header{background:#fff;border-bottom:1px solid rgba(15,23,42,0.04);position:sticky;top:0;z-index:60}
+.header-inner{display:flex;align-items:center;justify-content:space-between;height:68px}
+.brand{display:flex;align-items:center;gap:12px}
+.logo-box{width:44px;height:44px;border-radius:8px;background:#e8f3ff;display:grid;place-items:center;color:#0b74ff;font-weight:700}
+.brand-name{color:#0b74ff;font-weight:700;font-size:16px}
+.header-right{display:flex;align-items:center;gap:12px}
+.top-avatar{width:36px;height:36px;border-radius:50%;object-fit:cover;background:#f4f7fb;display:block}
+
+/* LAYOUT */
+.dashboard{display:grid;grid-template-columns:220px 1fr;gap:28px;padding:22px 0}
+.sidebar{background:transparent}
+.sidebar nav ul{list-style:none;padding:12px 0}
+.sidebar nav li{padding:12px 14px;border-radius:8px;color:#475569;cursor:pointer;font-size:14px}
+.sidebar nav li.active{background:#f1f6ff;color:#0b4efb;font-weight:700}
+.sidebar nav li.spaced{margin-top:28px}
+
+/* MAIN AREA */
+.main{padding-bottom:20px}
+.page-title{font-size:24px;font-weight:800;margin:6px 0 18px}
+
+/* CARD */
+.card{background:#fff;border-radius:12px;padding:18px;margin-bottom:18px;box-shadow:0 10px 30px rgba(15,23,42,0.03);border:1px solid rgba(15,23,42,0.03)}
+.profile-card .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+label{display:block;font-size:13px;color:#374151}
+label.full{grid-column:1/-1}
+input[type="text"], input[type="email"], input[type="number"], input[type="time"], input[type="date"], textarea, select{
+  width:100%;padding:10px;border-radius:8px;border:1px solid rgba(15,23,42,0.06);background:#fbfdff;font-size:14px;color:#111
+}
+textarea{min-height:72px;resize:vertical}
+.muted{color:#6b7280;margin-bottom:12px}
+
+/* actions */
+.profile-actions{display:flex;gap:10px;margin-top:12px}
+.btn-primary{background:#0b74ff;color:#fff;border:none;padding:10px 12px;border-radius:8px;cursor:pointer;box-shadow:0 8px 20px rgba(11,116,255,0.12)}
+.btn-outline{background:#fff;border:1px solid rgba(15,23,42,0.06);padding:9px 10px;border-radius:8px;cursor:pointer}
+.small{padding:8px 12px}
+.tiny{padding:6px 8px;font-size:13px}
+.fullwidth{width:100%}
+
+/* license row */
+.license-row{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.status{padding:4px 8px;border-radius:6px;font-weight:700}
+.status.pending{background:#f3f6ff;color:#0b74ff}
+.status.verified{background:#ecfdf5;color:#0b9f6b}
+
+/* two column cards */
+.two-col-cards{display:flex;gap:18px}
+.small-card{flex:1;padding:14px}
+.portfolio-card{width:360px}
+.portfolio-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.thumb{width:100%;height:72px;border-radius:8px;background:#f4f7fb;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.thumb img{width:100%;height:100%;object-fit:cover}
+
+/* booking list */
+.bookings-list{list-style:none;padding:0;margin:12px 0}
+.bookings-list li{display:flex;justify-content:space-between;align-items:center;padding:12px 0;border-bottom:1px solid rgba(15,23,42,0.04)}
+.booking-title{font-weight:700}
+.booking-sub{color:#6b7280;font-size:13px;margin-top:4px}
+.booking-actions{display:flex;gap:8px;align-items:center}
+.btn-danger{background:#ff5c5c;color:#fff;border:none;padding:8px 10px;border-radius:8px;cursor:pointer}
+.badge.done{background:#ecfdf5;color:#0b9f6b;padding:6px 10px;border-radius:999px;font-weight:700}
+
+/* earnings */
+.earnings-row{display:flex;justify-content:space-between;align-items:center}
+.earn-big{font-weight:800;color:#0b74ff;font-size:18px}
+.earn-muted{color:#6b7280;text-align:right}
+.payment-history table{width:100%;border-collapse:collapse;margin-top:10px;font-size:13px}
+.payment-history th, .payment-history td{padding:8px;border-bottom:1px solid rgba(15,23,42,0.03);text-align:left}
+.payment-history td.paid{color:#0b74ff;font-weight:700}
+
+/* reviews */
+.review{margin-bottom:12px}
+.r-author{font-weight:700;margin-bottom:6px}
+.r-body{color:#475569;margin-bottom:8px}
+.r-reply textarea{width:100%;min-height:56px;padding:8px;border-radius:8px;border:1px solid rgba(15,23,42,0.06);margin-bottom:6px}
+
+/* messages */
+.messages{display:flex;flex-direction:column;gap:8px;margin-top:8px}
+.msg{max-width:760px;padding:12px;border-radius:10px;background:#fff;border:1px solid rgba(15,23,42,0.03)}
+.msg.left{align-self:flex-start;background:#fff}
+.msg.right{align-self:flex-end;background:#0b74ff;color:#fff}
+.msg .msg-author{font-weight:700;margin-bottom:6px}
+.msg .msg-time{font-size:12px;color:#6b7280;margin-top:6px;text-align:right}
+.message-compose{display:flex;gap:8px;margin-top:12px}
+.message-compose input{flex:1;padding:10px;border-radius:8px;border:1px solid rgba(15,23,42,0.06)}
+
+/* footer */
+.dash-footer{width:100%;padding:28px 0;border-top:1px solid rgba(15,23,42,0.06);background:#fff;margin-top:20px;text-align:center}
+.dash-footer small{color:#6b7280;font-size:14px}
+
+/* responsive */
+@media (max-width:1000px){
+  .dashboard{grid-template-columns:80px 1fr;gap:18px}
+  .sidebar nav li{padding:10px 8px;font-size:13px}
+  .two-col-cards{flex-direction:column}
+  .portfolio-card{width:100%}
+}
+@media (max-width:640px){
+  .dashboard{grid-template-columns:1fr; padding:12px 0}
+  .sidebar{display:none}
+  .profile-card .form-grid{grid-template-columns:1fr}
+  .two-col-cards{gap:10px}
+}
